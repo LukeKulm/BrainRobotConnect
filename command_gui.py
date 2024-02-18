@@ -50,7 +50,7 @@ def experiment(monitor="testMonitor", path=""):
     images = [water_im, food_im, medicine_im, book_im]
     
     # define frequencies
-    frequencies = [30, 15, 10, 6]
+    frequencies = [6, 10, 15, 30]
     
     # message to indicate the active state is switched on
     passage = "You have now turned on the active state.\nPlease stare at the image that contains the object you want the robot to bring to you.\nPlease wait 3 seconds to be directed to the speller."
@@ -60,7 +60,7 @@ def experiment(monitor="testMonitor", path=""):
     # set up image display
     positions = [(0.8, 0.8), (0.8, -0.8), (-0.8, 0.8), (-0.8, -0.8)]
     print('reached positions')
-    frames_to_show = [2, 4, 6, 10] # frames on and off respectively
+    frames_to_show = [10, 6, 4, 2] # frames on and off respectively
     water_stim = visual.ImageStim(win, image=images[0], pos=positions[0], units="norm")
     food_stim = visual.ImageStim(win, image=images[1], pos=positions[1], units="norm")
     medicine_stim = visual.ImageStim(win, image=images[2], pos=positions[2], units="norm")
